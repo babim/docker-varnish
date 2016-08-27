@@ -15,7 +15,7 @@ ENV VARNISH_BACKEND_IP 10.10.10.10
 ENV VARNISH_PORT 80
 
 # Define mountable directories.
-VOLUMES ["/var/lib/varnish", "/etc/varnish"]
+VOLUME ["/var/lib/varnish", "/etc/varnish"]
 RUN mkdir -p /etc-start/varnish && mkdir -p /var-start/lib/varnish && \
     cp -R /etc/varnish/* /etc-start/varnish && \
     cp -R /var/lib/varnish/* /var-start/lib/varnish
