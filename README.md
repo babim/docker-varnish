@@ -18,5 +18,7 @@ $ sudo docker run -i -t -p 80 -e VARNISH_BACKEND_PORT=8080 -e VARNISH_BACKEND_IP
 ```
 
 ## value
+```
 VARNISH_BACKEND_PORT = Your apache port
 VARNISH_BACKEND_IP = Your apache server IP
+```
