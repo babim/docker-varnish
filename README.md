@@ -21,4 +21,6 @@ $ sudo docker run -i -t -p 80 -e VARNISH_BACKEND_PORT=8080 -e VARNISH_BACKEND_IP
 ```
 VARNISH_BACKEND_PORT = Your apache port
 VARNISH_BACKEND_IP = Your apache server IP
+VARNISH_DAEMON_OPTS = other run option
+VARNISH_MEMORY = malloc memory cache (example: 100M or 1G)
 ```
