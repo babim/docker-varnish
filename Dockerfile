@@ -10,7 +10,11 @@ RUN apt-get update && \
 	
 RUN apt-get clean && \
     apt-get autoclean && \
-    apt-get autoremove
+    apt-get autoremove -y --purge && \
+    rm -rf /build && \
+    rm -rf /tmp/* /var/tmp/* && \
+    rm -rf /var/lib/apt/lists/* && \
+    rm -f /etc/dpkg/dpkg.cfg.d/02apt-speedup
 
 # Make our custom VCLs available on the container
 ADD default.vcl /etc/varnish/default.vcl
