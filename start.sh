@@ -19,6 +19,7 @@ do
     sed -i "s|\${${name}}|${value}|g" /etc/varnish/default.vcl
 done
 
+VARNISH_DAEMON_OPTS1=${VARNISH_DAEMON_OPTS:-}
 # Start varnish and log
-varnishd -f /etc/varnish/default.vcl -s malloc,${VARNISH_MEMORY} -a 0.0.0.0:${VARNISH_PORT} ${VARNISH_DAEMON_OPTS}
+varnishd -f /etc/varnish/default.vcl -s malloc,${VARNISH_MEMORY} -a 0.0.0.0:${VARNISH_PORT} ${VARNISH_DAEMON_OPTS1}
 varnishlog
