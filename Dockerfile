@@ -13,6 +13,8 @@ ADD default.vcl /etc/varnish/default.vcl
 ENV VARNISH_BACKEND_PORT 8080
 ENV VARNISH_BACKEND_IP 10.10.10.10
 ENV VARNISH_PORT 80
+ENV VARNISH_MEMORY 1G
+ENV VARNISH_DAEMON_OPTS 
 
 # Define mountable directories.
 VOLUME ["/var/lib/varnish", "/etc/varnish"]
