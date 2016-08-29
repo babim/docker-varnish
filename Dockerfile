@@ -10,8 +10,8 @@ RUN apt-get clean && \
 # Make our custom VCLs available on the container
 ADD default.vcl /etc/varnish/default.vcl
 
-ENV VARNISH_BACKEND_PORT 8080
-ENV VARNISH_BACKEND_IP 10.10.10.10
+ENV VARNISH_BACKEND_PORT 80
+ENV VARNISH_BACKEND_IP web
 ENV VARNISH_PORT 80
 ENV VARNISH_MEMORY 1G
 
