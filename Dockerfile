@@ -1,7 +1,7 @@
 FROM babim/debianbase
 
 RUN apt-get update && \
-    apt-get install apt-transport-https -y --force-yes && \
+    apt-get install curl apt-transport-https -y --force-yes && \
     curl https://repo.varnish-cache.org/GPG-key.txt | apt-key add - && \
     echo "deb https://repo.varnish-cache.org/debian/ jessie varnish-4.1"\
 	  >> /etc/apt/sources.list.d/varnish-cache.list && \
