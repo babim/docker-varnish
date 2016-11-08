@@ -1,21 +1,7 @@
-FROM babim/debianbase
+FROM babim/alpinebase
 
-RUN apt-get update && \
-    apt-get install curl apt-transport-https -y --force-yes && \
-    curl https://repo.varnish-cache.org/GPG-key.txt | apt-key add - && \
-    echo "deb https://repo.varnish-cache.org/debian/ jessie varnish-4.1"\
-	  >> /etc/apt/sources.list.d/varnish-cache.list && \
-    apt-get update && \
-    apt-get install varnish -y --force-yes
+RUN apk add --no-cache varnish
 	
-RUN apt-get clean && \
-    apt-get autoclean && \
-    apt-get autoremove -y --purge && \
-    rm -rf /build && \
-    rm -rf /tmp/* /var/tmp/* && \
-    rm -rf /var/lib/apt/lists/* && \
-    rm -f /etc/dpkg/dpkg.cfg.d/02apt-speedup
-
 # Make our custom VCLs available on the container
 ADD default.vcl /etc/varnish/default.vcl
 
