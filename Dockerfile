@@ -13,6 +13,8 @@ ENV VARNISH_MEMORY 1G
 # Define mountable directories.
 VOLUME ["/var/lib/varnish", "/etc/varnish"]
 
+RUN mkdir -p /etc-start/varnish && cp -R /etc/varnish/* /etc-start/varnish
+    
 EXPOSE 80
 
 ADD start.sh /entrypoint.sh
