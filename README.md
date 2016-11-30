@@ -1,3 +1,9 @@
+[![](https://images.microbadger.com/badges/image/babim/varnish.svg)](https://microbadger.com/images/babim/varnish "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/varnish.svg)](https://microbadger.com/images/babim/varnish "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/varnish:ssh.svg)](https://microbadger.com/images/babim/varnish:ssh "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/varnish:ssh.svg)](https://microbadger.com/images/babim/varnish:ssh "Get your own version badge on microbadger.com")
+
+[![](https://images.microbadger.com/badges/image/babim/varnish:alpine.svg)](https://microbadger.com/images/babim/varnish:alpine "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/varnish:alpine.svg)](https://microbadger.com/images/babim/varnish:alpine "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/varnish:alpine.ssh.svg)](https://microbadger.com/images/babim/varnish:alpine.ssh "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/varnish:alpine.ssh.svg)](https://microbadger.com/images/babim/varnish:alpine.ssh "Get your own version badge on microbadger.com")
+
 # Use the pre built image
 
 The pre built image can be downloaded using docker directly. After that you do not need to use this command again, you will have the image on your machine.
