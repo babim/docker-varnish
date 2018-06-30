@@ -7,6 +7,11 @@ RUN apt-get update && \
     chmod 755 /option.sh && apt-get purge -y wget
     
 RUN apt-get update && \
+    apt-get install curl apt-transport-https -y --force-yes && \
+    curl -L https://packagecloud.io/varnishcache/varnish60/gpgkey | sudo apt-key add - && \
+    echo "deb https://packagecloud.io/varnishcache/varnish60/debian/ stretch main"\
+	  >> /etc/apt/sources.list.d/varnish-cache.list && \
+    apt-get update && \
     apt-get install varnish -y --force-yes
 	
 RUN apt-get clean && \
