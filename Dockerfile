@@ -1,4 +1,4 @@
-FROM babim/debianbase:8
+FROM babim/debianbase
 
 # Download option
 ## ubuntu/debian
@@ -7,11 +7,6 @@ RUN apt-get update && \
     chmod 755 /option.sh && apt-get purge -y wget
     
 RUN apt-get update && \
-    apt-get install curl apt-transport-https -y --force-yes && \
-    curl https://repo.varnish-cache.org/GPG-key.txt | apt-key add - && \
-    echo "deb https://repo.varnish-cache.org/debian/ jessie varnish-4.1"\
-	  >> /etc/apt/sources.list.d/varnish-cache.list && \
-    apt-get update && \
     apt-get install varnish -y --force-yes
 	
 RUN apt-get clean && \
