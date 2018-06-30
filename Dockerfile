@@ -9,7 +9,7 @@ RUN apt-get update && \
 RUN apt-get update && \
     apt-get install curl apt-transport-https -y --force-yes && \
     curl -L https://packagecloud.io/varnishcache/varnish41/gpgkey | sudo apt-key add - && \
-    echo "deb https://packagecloud.io/varnishcache/varnish41/debian/ stretch varnish-4.1"\
+    echo "deb https://packagecloud.io/varnishcache/varnish41/debian/ stretch main"\
 	  >> /etc/apt/sources.list.d/varnish-cache.list && \
     apt-get update && \
     apt-get install varnish -y --force-yes
