@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 export TERM=xterm
 
 if [ -z "`ls /etc/varnish`" ] 
@@ -13,6 +13,9 @@ do
     eval value=\$$name
     sed -i "s|\${${name}}|${value}|g" /etc/varnish/default.vcl
 done
+
+# option with entrypoint
+if [ -f "/option.sh" ]; then /option.sh; fi
 
 VARNISH_DAEMON_OPTS1=${VARNISH_DAEMON_OPTS:-}
 # Start varnish and log
