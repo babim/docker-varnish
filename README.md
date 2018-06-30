@@ -1,5 +1,5 @@
 [![](https://images.microbadger.com/badges/image/babim/varnish.svg)](https://microbadger.com/images/babim/varnish "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/varnish.svg)](https://microbadger.com/images/babim/varnish "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/babim/varnish:ssh.svg)](https://microbadger.com/images/babim/varnish:4.1 "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/varnish:ssh.svg)](https://microbadger.com/images/babim/varnish:4.1 "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/varnish:4.1.svg)](https://microbadger.com/images/babim/varnish:4.1 "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/varnish:4.1.svg)](https://microbadger.com/images/babim/varnish:4.1 "Get your own version badge on microbadger.com")
 
 [![](https://images.microbadger.com/badges/image/babim/varnish:alpine.svg)](https://microbadger.com/images/babim/varnish:alpine "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/varnish:alpine.svg)](https://microbadger.com/images/babim/varnish:alpine "Get your own version badge on microbadger.com")
 
