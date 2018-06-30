@@ -1,8 +1,7 @@
 [![](https://images.microbadger.com/badges/image/babim/varnish.svg)](https://microbadger.com/images/babim/varnish "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/varnish.svg)](https://microbadger.com/images/babim/varnish "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/babim/varnish:ssh.svg)](https://microbadger.com/images/babim/varnish:ssh "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/varnish:ssh.svg)](https://microbadger.com/images/babim/varnish:ssh "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/babim/varnish:ssh.svg)](https://microbadger.com/images/babim/varnish:4.1 "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/varnish:ssh.svg)](https://microbadger.com/images/babim/varnish:4.1 "Get your own version badge on microbadger.com")
 
 [![](https://images.microbadger.com/badges/image/babim/varnish:alpine.svg)](https://microbadger.com/images/babim/varnish:alpine "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/varnish:alpine.svg)](https://microbadger.com/images/babim/varnish:alpine "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/babim/varnish:alpine.ssh.svg)](https://microbadger.com/images/babim/varnish:alpine.ssh "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/version/babim/varnish:alpine.ssh.svg)](https://microbadger.com/images/babim/varnish:alpine.ssh "Get your own version badge on microbadger.com")
 
 # Use the pre built image
 
@@ -30,4 +29,29 @@ VARNISH_BACKEND_IP = Your apache server IP (default web . You can use name host 
 VARNISH_DAEMON_OPTS = other run option (default blank)
 VARNISH_MEMORY = malloc memory cache (example: 100M or default 1G)
 VARNISH_PORT = your varnish port (default 80)
+```
+## Environment ssh, cron option
+
+#### SSH = SSH service for docker container
+#### SSHPASS = password for SSH service
+#### CRON = Crontab service for container
+#### NFS = NFS client mount for container (need full permission)
+#### SYNOLOGY = SYNOLOGY user ID
+#### UPGRADE = upgrade OS for container
+#### DNS = DNS google, cloudflare for this container
+#### FULLOPTION = all option above
+
+
+```
+SSH=false
+SSHPASS=root (or you set)
+
+CRON=false
+NFS=false
+SYNOLOGY=false
+UPGRADE=false
+WWWUSER=www-data
+MYSQLUSER=mysql
+FULLOPTION=true
+DNS=false
 ```
