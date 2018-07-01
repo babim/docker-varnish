@@ -1,4 +1,4 @@
-FROM babim/debianbase
+FROM babim/debianbase:9
 
 # Download option
 ## ubuntu/debian
